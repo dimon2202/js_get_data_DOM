@@ -14,7 +14,7 @@ const totalPopulation = parsedPopulations.reduce(
   0,
 );
 
-const avgPopulation = totalPopulation / parsedPopulations.length;
+const avgPopulation = Math.round(totalPopulation / parsedPopulations.length);
 
 totalPopulationElement.textContent = totalPopulation.toLocaleString('en-US');
 avgPopulationElement.textContent = avgPopulation.toLocaleString('en-US');
